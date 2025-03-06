@@ -1,70 +1,87 @@
-/* 🖥️ Sets the entire background to a classic 2000s repeating GIF */
+/* 🌈 Background */
 body {
-    background: url('https://i.imgur.com/JGzF01U.gif'); /* Glitter tile background */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Classic Myspace font */
-    color: #ff33cc; /* Hot pink text */
-    text-align: center; /* Centers everything */
+    background: url('https://i.imgur.com/JGzF01U.gif'); /* Sparkling glitter background */
+    font-family: "Trebuchet MS", Verdana, Geneva, sans-serif; /* 90s-era web fonts */
+    color: #ff33cc; /* Bright pink text */
+    text-align: center;
 }
 
-/* 💾 Nostalgic container for content */
+/* 🖥️ Main content box */
 .container {
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(50, 0, 50, 0.8));
     padding: 20px;
-    border: 5px solid #ff33cc; /* Pink border */
-    box-shadow: 0px 0px 20px #ff33cc; /* Glowing neon effect */
-    width: 80%;
+    border: 5px solid #ff33cc;
+    box-shadow: 0px 0px 20px #ff33cc, 0px 0px 40px cyan;
+    width: 85%;
     margin: auto;
+    border-radius: 15px;
 }
 
-/* 🎀 Styling for the title */
-h1 {
-    font-size: 50px;
-    text-shadow: 2px 2px 5px cyan; /* Neon glow effect */
-    animation: blinkText 1s infinite alternate; /* Blinking effect */
-}
-
-/* 🎇 Text blinking animation */
-@keyframes blinkText {
-    0% { color: cyan; }
-    100% { color: magenta; }
-}
-
-/* ⚠️ Crazy flashing text effect */
-@keyframes flashingText {
-    0% { color: red; }
-    25% { color: yellow; }
-    50% { color: lime; }
-    75% { color: cyan; }
-    100% { color: magenta; }
-}
-.flashing {
-    font-size: 20px;
-    font-weight: bold;
-    animation: flashingText 0.5s infinite alternate;
-}
-
-/* 🔗 Navbar styling */
+/* 🎭 Navigation */
 .nav a {
     font-size: 20px;
-    color: yellow; /* Bright text */
+    color: yellow;
     text-decoration: none;
     margin: 10px;
 }
 
-/* 🎭 Navbar hover effect */
 .nav a:hover {
     color: white;
     text-decoration: underline;
 }
 
-/* 🎨 Adds a border to images */
-img {
-    border: 5px solid #00ffcc;
-    box-shadow: 5px 5px 10px cyan;
-    margin-top: 20px;
+/* 📌 Artistic Layout for Projects */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-/* 🖱️ Sets a throwback Windows XP-style cursor */
+/* 🔥 Individual Project Styling */
+.project {
+    width: 45%;
+    padding: 20px;
+    border: 5px solid cyan;
+    box-shadow: 5px 5px 15px magenta;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* 🔄 Slight tilt effect when hovered */
+.project:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+/* 🖼️ Culture Jam Image */
+.project1 img {
+    width: 100%;
+    border: 5px solid yellow;
+    box-shadow: 5px 5px 15px cyan;
+    border-radius: 10px;
+}
+
+/* 🎬 Video Remix */
+.project2 iframe {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px lime;
+}
+
+/* 📜 Artist Statement */
+.artist-statement {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* 🖱️ Classic Windows Cursor */
 body { 
     cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur126.cur'), auto; 
 }
