@@ -1,38 +1,56 @@
+/* 🖥️ Sets the entire background to a classic 2000s repeating GIF */
 body {
-    background: url('https://i.imgur.com/JGzF01U.gif'); /* A repeating glitter background */
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #ff33cc;
-    text-align: center;
+    background: url('https://i.imgur.com/JGzF01U.gif'); /* Glitter tile background */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Classic Myspace font */
+    color: #ff33cc; /* Hot pink text */
+    text-align: center; /* Centers everything */
 }
+
+/* 💾 Nostalgic container for content */
 .container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     padding: 20px;
-    border: 5px solid #ff33cc;
-    box-shadow: 0px 0px 20px #ff33cc;
+    border: 5px solid #ff33cc; /* Pink border */
+    box-shadow: 0px 0px 20px #ff33cc; /* Glowing neon effect */
     width: 80%;
     margin: auto;
 }
+
+/* 🎀 Styling for the title */
 h1 {
     font-size: 50px;
-    text-shadow: 2px 2px 5px cyan;
-    animation: blinkText 1s infinite alternate;
+    text-shadow: 2px 2px 5px cyan; /* Neon glow effect */
+    animation: blinkText 1s infinite alternate; /* Blinking effect */
 }
+
+/* 🎇 Text blinking animation */
 @keyframes blinkText {
     0% { color: cyan; }
     100% { color: magenta; }
 }
+
+/* 🔗 Navbar styling */
 .nav a {
     font-size: 20px;
-    color: yellow;
+    color: yellow; /* Bright text */
     text-decoration: none;
     margin: 10px;
 }
+
+/* 🎭 Navbar hover effect */
 .nav a:hover {
     color: white;
     text-decoration: underline;
 }
+
+/* 🎨 Adds a border to images */
 img {
     border: 5px solid #00ffcc;
     box-shadow: 5px 5px 10px cyan;
     margin-top: 20px;
+}
+
+/* 🖱️ Sets a throwback Windows XP-style cursor */
+body { 
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur126.cur'), auto; 
 }
