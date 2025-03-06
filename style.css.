@@ -1,9 +1,14 @@
 /* 🌈 Background */
 body {
-    background: url('https://i.imgur.com/JGzF01U.gif'); /* Sparkling glitter background */
+    background: url('https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/GlitterBackground.gif') repeat;
     font-family: "Trebuchet MS", Verdana, Geneva, sans-serif; /* 90s-era web fonts */
     color: #ff33cc; /* Bright pink text */
     text-align: center;
+}
+
+/* 🖱️ Custom Cursor */
+body { 
+    cursor: url('https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/Cursor.cur'), auto; 
 }
 
 /* 🖥️ Main content box */
@@ -80,9 +85,3 @@ body {
     color: white;
     text-shadow: 2px 2px 5px black;
 }
-
-/* 🖱️ Classic Windows Cursor */
-body { 
-    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur126.cur'), auto; 
-}
-
