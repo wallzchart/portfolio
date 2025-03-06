@@ -1,9 +1,87 @@
-/* 🌈 Background */
+/* 🌌 Solid Sky Blue Background */
 body {
-    background: url('https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/GlitterBackground.gif') repeat;
-    font-family: "Trebuchet MS", Verdana, Geneva, sans-serif; /* 90s-era web fonts */
-    color: #ff33cc; /* Bright pink text */
+    background-color: #87CEEB; /* Sky blue */
+    font-family: "Courier New", monospace; /* Command Prompt Style */
+    color: #d4ffb3; /* Light green text */
     text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* 🖥️ Windows XP-Style Title Bar */
+.title-bar {
+    background: linear-gradient(to right, #004080, #0080ff);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 📁 Title Bar Buttons */
+.title-buttons button {
+    background: lightgray;
+    border: 1px solid black;
+    padding: 2px 6px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* 📂 Windows XP-Style Navigation */
+.nav {
+    background: #008080;
+    padding: 10px;
+    border-bottom: 4px solid #004080;
+    text-align: left;
+    font-size: 18px;
+}
+
+.nav-section a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-section a:hover {
+    text-decoration: underline;
+}
+
+/* 🔄 Diagonal Layout for Projects */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* 📦 Windows XP-Style Section Boxes */
+.section {
+    width: 45%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid #d4ffb3;
+    box-shadow: 5px 5px 15px #00ffcc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 📜 Text Box Formatting */
+.text-box {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* 🎥 Video Styling */
+iframe {
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #00ffcc;
 }
 
 /* 🖱️ Custom Cursor */
@@ -11,77 +89,11 @@ body {
     cursor: url('https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/Cursor.cur'), auto; 
 }
 
-/* 🖥️ Main content box */
-.container {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(50, 0, 50, 0.8));
-    padding: 20px;
-    border: 5px solid #ff33cc;
-    box-shadow: 0px 0px 20px #ff33cc, 0px 0px 40px cyan;
-    width: 85%;
-    margin: auto;
-    border-radius: 15px;
+/* 🔄 Positioning */
+.left {
+    text-align: left;
 }
 
-/* 🎭 Navigation */
-.nav a {
-    font-size: 20px;
-    color: yellow;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-/* 📌 Artistic Layout for Projects */
-.project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-/* 🔥 Individual Project Styling */
-.project {
-    width: 45%;
-    padding: 20px;
-    border: 5px solid cyan;
-    box-shadow: 5px 5px 15px magenta;
-    border-radius: 10px;
-    transition: transform 0.2s ease-in-out;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-/* 🔄 Slight tilt effect when hovered */
-.project:hover {
-    transform: rotate(-3deg) scale(1.05);
-}
-
-/* 🖼️ Culture Jam Image */
-.project1 img {
-    width: 100%;
-    border: 5px solid yellow;
-    box-shadow: 5px 5px 15px cyan;
-    border-radius: 10px;
-}
-
-/* 🎬 Video Remix */
-.project2 iframe {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px lime;
-}
-
-/* 📜 Artist Statement */
-.artist-statement {
-    font-size: 18px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    border-radius: 8px;
-    color: white;
-    text-shadow: 2px 2px 5px black;
+.right {
+    text-align: right;
 }
