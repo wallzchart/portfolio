@@ -29,6 +29,20 @@ h1 {
     100% { color: magenta; }
 }
 
+/* ⚠️ Crazy flashing text effect */
+@keyframes flashingText {
+    0% { color: red; }
+    25% { color: yellow; }
+    50% { color: lime; }
+    75% { color: cyan; }
+    100% { color: magenta; }
+}
+.flashing {
+    font-size: 20px;
+    font-weight: bold;
+    animation: flashingText 0.5s infinite alternate;
+}
+
 /* 🔗 Navbar styling */
 .nav a {
     font-size: 20px;
