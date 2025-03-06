@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Early 2000s Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Links to the CSS file for styling -->
+    <title>Grace's Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links to CSS file -->
 </head>
-<body onload="triggerPopup()"> <!-- Runs the pop-up when the page loads -->
+<body>
 
-    <!-- Classic scrolling marquee text (Myspace vibes) -->
+    <!-- Scrolling marquee for fun -->
     <marquee behavior="scroll" direction="left" scrollamount="10">
-        ✨ Welcome to my awesome portfolio! ✨ Enjoy the nostalgia! 🎶
+        🎨 Welcome to my ART 121 Digital Portfolio! 🎥 Click to explore my projects!
     </marquee>
 
     <div class="container">
-        <!-- Retro title -->
-        <h1>Welcome to My Nostalgic Art Portfolio 🎨✨</h1>
+        <h1>Grace's Digital Portfolio</h1>
 
-        <!-- Classic navigation links -->
+        <!-- Navigation -->
         <div class="nav">
-            <a href="#">Home</a> | 
-            <a href="#">Gallery</a> | 
-            <a href="#">About Me</a> | 
-            <a href="#">Guestbook</a>
+            <a href="index.html">Home</a> |
+            <a href="guestbook.html">Guestbook</a>
         </div>
 
-        <!-- Fun welcome text -->
-        <p>Hey! Thanks for stopping by! 🌟 Check out my art below!</p>
+        <h2>🌟 Featured Projects 🌟</h2>
 
-        <!-- Under construction GIF for classic aesthetic -->
-        <img src="https://i.imgur.com/MDJq6bx.gif" alt="Under Construction" width="200px">
+        <div class="project-gallery">
+            <!-- Culture Jam (Project 1) -->
+            <div class="project project1">
+                <h2>🖼️ Project 1: Culture Jam</h2>
+                <img src="YOUR_CULTURE_JAM_IMAGE_URL" alt="Culture Jam Artwork">
+                <p class="artist-statement">
+                    <strong>Artist Statement:</strong> Write your **Culture Jam** artist statement here, describing the concept and execution of the project.
+                </p>
+            </div>
 
-        <!-- Guestbook using an embedded Google Form (replace with your actual form link) -->
-        <h2>📖 Sign My Guestbook!</h2>
-        <iframe src=https://forms.gle/uXCx1vc7nByUqRpT8 width="80%" height="400px"></iframe>
+            <!-- Video Remix (Project 2) -->
+            <div class="project project2">
+                <h2>🎬 Project 2: Video Remix</h2>
+                <iframe width="80%" height="400px" src="YOUR_VIDEO_EMBED_URL" frameborder="0" allowfullscreen></iframe>
+                <p class="artist-statement">
+                    <strong>Artist Statement:</strong> Write your **Video Remix** artist statement here, explaining your creative choices and technical process.
+                </p>
+            </div>
+        </div>
+
     </div>
-
-    <!-- Auto-playing nostalgic MIDI music -->
-    <embed src="https://www.vgmusic.com/music/console/nintendo/nes/mario.mid" autostart="true" loop="true" hidden="true">
-
-    <!-- Windows XP-style pop-up -->
-    <script>
-        function triggerPopup() {
-            setTimeout(() => {
-                // Play error sound
-                let audio = new Audio('https://www.myinstants.com/media/sounds/windows-xp-error.mp3');
-                audio.play();
-
-                // Show retro alert box
-                alert("⚠️ Windows XP Error: Your nostalgia levels are too high! Proceed with caution.");
-            }, 2000); // Delays by 2 seconds for dramatic effect
-        }
-    </script>
 
 </body>
 </html>
+
