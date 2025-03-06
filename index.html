@@ -2,61 +2,44 @@
 <html>
 <head>
     <title>Grace's Digital Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Links to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Windows XP-style popup on page load
+        window.onload = function() {
+            setTimeout(function() {
+                alert("💾 Welcome to Grace's Digital Portfolio! Click around and explore! 📀");
+                var audio = new Audio('https://www.myinstants.com/media/sounds/windows-xp-error.mp3');
+                audio.play();
+            }, 1000);
+        };
+    </script>
 </head>
 <body>
 
-    <!-- Scrolling marquee for fun -->
-    <marquee behavior="scroll" direction="left" scrollamount="10">
-        🎨 Welcome to my ART 121 Digital Portfolio! 🎥 Click to explore my projects!
-    </marquee>
-
-    <div class="container">
-        <h1>Grace's Digital Portfolio</h1>
-
-        <!-- Navigation -->
-        <div class="nav">
-            <a href="index.html">Home</a> |
-            <a href="guestbook.html">Guestbook</a>
+    <!-- Windows XP-style title bar -->
+    <div class="title-bar">
+        <span class="title-text">📁 Grace's Digital Portfolio</span>
+        <div class="title-buttons">
+            <button>_</button>
+            <button>[ ]</button>
+            <button>X</button>
         </div>
-
-        <h2>🌟 Featured Projects 🌟</h2>
-
-        <div class="project-gallery">
-            <!-- Culture Jam (Project 1) -->
-            <div class="project project1">
-                <h2>🖼️ Project 1: Culture Jam</h2>
-                <img src="https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/CultureJam.jpg" alt="Culture Jam Artwork">
-                <p class="artist-statement">
-                    <strong>Artist Statement:</strong>  
-                    My Culture Jam assignment titled <strong>"Shot by iPhone"</strong> is a critique of the advertisement campaign <em>"Shot on iPhone."</em>  
-                    Through their business model of restricted app ecosystems, closed hardware-software integration, and exclusivity, Apple limits consumer choice.  
-                    This image portrays an iPhone 16 obliterating a variety of phones, including older iPhones, referencing Apple's software updates that slow down older devices.  
-                    These "updates" claim to help with battery management but instead make older devices sluggish unless the battery is replaced—  
-                    an issue worsened by Apple's restrictions on user repairs.  
-                </p>
-            </div>
-
-            <!-- Video Remix (Project 2) -->
-            <div class="project project2">
-                <h2>🎬 Project 2: Video Remix</h2>
-                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/NJy1W6uMMpQ" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-                <p class="artist-statement">
-                    <strong>Artist Statement:</strong>  
-                    My remix piece explores the evolution of human communication—from spoken word to the internet.  
-                    The original 1997 video depicted the internet as the next great leap, following the telephone, radio, and television.  
-                    However, I challenge this idea. While the internet makes sharing art and words easier, it has also created a false sense of connection.  
-                    We now scroll, click, and type instead of speaking face-to-face.  
-                    My video contrasts the optimism of early internet culture with the reality today—a world where communication is abundant,  
-                    yet genuine human connection feels increasingly rare.  
-                    The piece ends with the question: <strong>"Why?"</strong> urging viewers to reconsider their reliance on digital connections.  
-                </p>
-            </div>
-        </div>
-
     </div>
 
-</body>
-</html>
+    <!-- Navigation Panel -->
+    <div class="nav">
+        <div class="nav-section">
+            <a href="index.html">🏠 Home</a>
+            <a href="guestbook.html">📖 Guestbook</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+
+        <!-- Project 1: Culture Jam -->
+        <div class="section left">
+            <h2>🖼️ Project 1: Culture Jam</h2>
+            <img src="https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/CultureJam.jpg" alt="Culture Jam Artwork">
+            <div class="
+
