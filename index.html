@@ -4,7 +4,7 @@
     <title>My Early 2000s Portfolio</title>
     <link rel="stylesheet" href="style.css"> <!-- Links to the CSS file for styling -->
 </head>
-<body>
+<body onload="triggerPopup()"> <!-- Runs the pop-up when the page loads -->
 
     <!-- Classic scrolling marquee text (Myspace vibes) -->
     <marquee behavior="scroll" direction="left" scrollamount="10">
@@ -36,6 +36,20 @@
 
     <!-- Auto-playing nostalgic MIDI music -->
     <embed src="https://www.vgmusic.com/music/console/nintendo/nes/mario.mid" autostart="true" loop="true" hidden="true">
+
+    <!-- Windows XP-style pop-up -->
+    <script>
+        function triggerPopup() {
+            setTimeout(() => {
+                // Play error sound
+                let audio = new Audio('https://www.myinstants.com/media/sounds/windows-xp-error.mp3');
+                audio.play();
+
+                // Show retro alert box
+                alert("⚠️ Windows XP Error: Your nostalgia levels are too high! Proceed with caution.");
+            }, 2000); // Delays by 2 seconds for dramatic effect
+        }
+    </script>
 
 </body>
 </html>
