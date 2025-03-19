@@ -1,99 +1,92 @@
-/* 🌌 Solid Sky Blue Background */
+/* Background */
 body {
-    background-color: #87CEEB; /* Sky blue */
+    background-color: #87CEEB; /* Sky Blue */
     font-family: "Courier New", monospace; /* Command Prompt Style */
-    color: #d4ffb3; /* Light green text */
+    color: #A8FF9A; /* Light green text */
     text-align: center;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    cursor: url('Cursor.cur'), auto;
 }
 
-/* 🖥️ Windows XP-Style Title Bar */
+/* Windows XP-style Title Bar */
 .title-bar {
-    background: linear-gradient(to right, #004080, #0080ff);
+    background: linear-gradient(to right, #0066CC, #004080);
     color: white;
-    font-size: 24px;
     padding: 10px;
     text-align: left;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-/* 📁 Title Bar Buttons */
-.title-buttons button {
-    background: lightgray;
-    border: 1px solid black;
-    padding: 2px 6px;
-    margin: 2px;
+.title-bar .buttons span {
+    margin-left: 8px;
     cursor: pointer;
 }
 
-/* 📂 Windows XP-Style Navigation */
-.nav {
-    background: #008080;
+/* Navigation */
+nav {
+    background: #004080;
     padding: 10px;
-    border-bottom: 4px solid #004080;
-    text-align: left;
-    font-size: 18px;
 }
 
-.nav-section a {
-    color: white;
+nav a {
+    color: yellow;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px 15px;
+    margin: 5px;
 }
 
-.nav-section a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-/* 🔄 Diagonal Layout for Projects */
-.content {
+/* Project Sections */
+.project {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid cyan;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.project img {
+    width: 100%;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 0, 0.5);
+}
+
+.project iframe {
+    width: 80%;
+    height: 400px;
+    border: 3px solid lime;
+    border-radius: 5px;
+}
+
+/* Zine Gallery */
+.zine-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* 📦 Windows XP-Style Section Boxes */
-.section {
-    width: 45%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border: 3px solid #d4ffb3;
-    box-shadow: 5px 5px 15px #00ffcc;
-    border-radius: 10px;
-    text-align: center;
+.zine-gallery img {
+    width: 30%;
+    border: 2px solid white;
+    padding: 5px;
+    background: black;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
-/* 📜 Text Box Formatting */
-.text-box {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-/* 🎥 Video Styling */
-iframe {
-    width: 90%;
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px #00ffcc;
-}
-
-/* 🖱️ Custom Cursor */
-body { 
-    cursor: url('https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/Cursor.cur'), auto; 
-}
-
-/* 🔄 Positioning */
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
+/* Footer */
+footer {
+    margin-top: 30px;
+    background: #004080;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
 }
