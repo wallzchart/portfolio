@@ -1,75 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grace's Digital Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        // Windows XP-style popup on page load
-        window.onload = function() {
-            setTimeout(function() {
-                alert("💾 Welcome to Grace's Digital Portfolio! Click around and explore! 📀");
-                var audio = new Audio('https://www.myinstants.com/media/sounds/windows-xp-error.mp3');
-                audio.play();
-            }, 1000);
-        };
-    </script>
+    <link rel="icon" type="image/x-icon" href="Cursor.cur">
 </head>
 <body>
 
-    <!-- Windows XP-style title bar -->
+    <!-- Windows XP-style Title Bar -->
     <div class="title-bar">
-        <span class="title-text">📁 Grace's Digital Portfolio</span>
-        <div class="title-buttons">
-            <button>_</button>
-            <button>[ ]</button>
-            <button>X</button>
+        <span>📁 Grace's Digital Portfolio</span>
+        <div class="buttons">
+            <span class="minimize">🟡</span>
+            <span class="maximize">🟢</span>
+            <span class="close">🔴</span>
         </div>
     </div>
 
-    <!-- Navigation Panel -->
-    <div class="nav">
-        <div class="nav-section">
-            <a href="index.html">🏠 Home</a>
-            <a href="guestbook.html">📖 Guestbook</a>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="guestbook.html">📜 Guestbook</a>
+    </nav>
+
+    <!-- Featured Projects Section -->
+    <h1>🌟 Featured Projects 🌟</h1>
+
+    <!-- Project 1: Culture Jam -->
+    <section class="project">
+        <h2>🖼️ Project 1: Culture Jam</h2>
+        <img src="CultureJam.jpg" alt="Shot by iPhone artwork">
+        <p><strong>Artist Statement:</strong> My Culture Jam assignment titled <em>"Shot by iPhone"</em> critiques Apple's restricted app ecosystems, closed hardware-software integration, and exclusivity. Apple limits consumer choice, preventing users from freely repairing their devices. This piece represents how their business model forces customers to upgrade, limiting longevity and user autonomy.</p>
+    </section>
+
+    <!-- Project 2: Video Remix -->
+    <section class="project">
+        <h2>📺 Project 2: Video Remix</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NJy1W6uMMpQ" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Artist Statement:</strong> My remix piece explores the evolution of human communication—from the simplicity of spoken word to the digital sophistication of the internet. While technology promised to bring people together, I question if it has actually led to more isolation.</p>
+    </section>
+
+    <!-- Project 3: Artist Zine -->
+    <section class="project">
+        <h2>📖 Project 3: Artist Zine</h2>
+        <div class="zine-gallery">
+            <img src="Picture1.png" alt="Zine Page 1">
+            <img src="Picture2.png" alt="Zine Page 2">
+            <img src="Picture3.png" alt="Zine Page 3">
+            <img src="Picture4.png" alt="Zine Page 4">
+            <img src="Picture5.png" alt="Zine Page 5">
+            <img src="Picture6.png" alt="Zine Page 6">
+            <img src="Picture7.png" alt="Zine Page 7">
+            <img src="Picture8.png" alt="Zine Page 8">
+            <img src="Picture9.png" alt="Zine Page 9">
+            <img src="Picture10.png" alt="Zine Page 10">
+            <img src="Picture11.png" alt="Zine Page 11">
+            <img src="Picture12.png" alt="Zine Page 12">
+            <img src="Picture13.png" alt="Zine Page 13">
         </div>
-    </div>
+    </section>
 
-    <!-- Page Content -->
-    <div class="content">
-
-        <!-- Project 1: Culture Jam -->
-        <div class="section left">
-            <h2>🖼️ Project 1: Culture Jam</h2>
-            <img src="https://raw.githubusercontent.com/wallzchart/portfolio/refs/heads/main/CultureJam.jpg" alt="Culture Jam Artwork">
-            <div class="text-box">
-                <p><strong>Artist Statement:</strong> My Culture Jam assignment titled <strong>"Shot by iPhone"</strong> is a critique of the advertisement campaign <em>"Shot on iPhone."</em>  
-                Through their business model of restricted app ecosystems, closed hardware-software integration, and exclusivity, Apple limits consumer choice.  
-                This image portrays an iPhone 16 obliterating a variety of phones, including older iPhones, referencing Apple's software updates that slow down older devices.  
-                These "updates" claim to help with battery management but instead make older devices sluggish unless the battery is replaced—  
-                an issue worsened by Apple's restrictions on user repairs.  
-                </p>
-            </div>
-        </div>
-
-        <!-- Project 2: Video Remix -->
-        <div class="section right">
-            <h2>🎬 Project 2: Video Remix</h2>
-            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/NJy1W6uMMpQ" frameborder="0" allowfullscreen></iframe>
-            <div class="text-box">
-                <p><strong>Artist Statement:</strong> My remix piece explores the evolution of human communication—from spoken word to the internet.  
-                The original 1997 video depicted the internet as the next great leap, following the telephone, radio, and television.  
-                However, I challenge this idea. While the internet makes sharing art and words easier, it has also created a false sense of connection.  
-                We now scroll, click, and type instead of speaking face-to-face.  
-                My video contrasts the optimism of early internet culture with the reality today—a world where communication is abundant,  
-                yet genuine human connection feels increasingly rare.  
-                The piece ends with the question: <strong>"Why?"</strong> urging viewers to reconsider their reliance on digital connections.  
-                </p>
-            </div>
-        </div>
-
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>📟 Designed with 2000s internet nostalgia | CTRL + ALT + DELETE to wake up</p>
+    </footer>
 
 </body>
 </html>
-
 
